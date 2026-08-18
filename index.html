@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clarity — Support</title>
+<meta name="description" content="Support and help for Clarity, the on-device photo enhancer for iPhone.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f8fa;
+    --card: #ffffff;
+    --text: #16181d;
+    --muted: #5c6270;
+    --rule: #e4e7ec;
+    --accent: #0a7cff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --card: #171a20;
+      --text: #f0f2f5;
+      --muted: #a0a7b4;
+      --rule: #272b33;
+      --accent: #4da3ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 18px;
+    padding: 40px 34px;
+  }
+  h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .tagline { color: var(--muted); margin: 0 0 30px; }
+  h2 {
+    font-size: 1.05rem;
+    margin: 30px 0 8px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p { margin: 0 0 14px; }
+  a { color: var(--accent); }
+  .contact {
+    background: color-mix(in srgb, var(--accent) 9%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+    border-radius: 12px;
+    padding: 18px;
+    margin: 26px 0 0;
+    text-align: center;
+  }
+  .contact p { margin: 0; }
+  .contact a { font-weight: 600; font-size: 1.05rem; }
+  footer {
+    max-width: 680px;
+    margin: 22px auto 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Clarity</h1>
+  <p class="tagline">Sharper, cleaner photos — enhanced entirely on your iPhone. Nothing uploaded, ever.</p>
+
+  <h2>Getting help</h2>
+  <p>Something not working, or a photo that didn't come out the way you expected? Email me and include your iOS version, your iPhone model, and roughly what the photo was (a portrait, a night shot, a screenshot, an old scan) — that's usually enough to work out what happened.</p>
+
+  <div class="contact">
+    <p><a href="mailto:devfa75@gmail.com">devfa75@gmail.com</a></p>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <p><strong>Do my photos get uploaded anywhere?</strong><br>
+  No. Every enhancement runs on your iPhone with Apple's Core ML and the Neural Engine. The app has no servers and makes no network calls of its own. See the <a href="privacy.html">privacy policy</a>.</p>
+
+  <p><strong>What do the three models do?</strong><br>
+  <em>Balanced</em> is fast and handles most photos well. <em>Restore</em> is the strongest repair, meant for soft, blurry, or heavily degraded shots. <em>Ultra Sharp</em> maximises fine detail on photos that are already decent. Left on <em>Choose automatically</em>, Clarity measures each photo's sharpness, noise, and texture and picks for you — the model it chose is shown with the result.</p>
+
+  <p><strong>Faces look different from the rest of the photo.</strong><br>
+  Faces get a dedicated restoration pass, which is the biggest quality gain on photos of people but can look overdone on a face that was already sharp. Lower <em>Face strength</em> in Settings to keep more of the original face, or turn <em>Enhance faces</em> off entirely. <em>Smooth skin</em> controls how much sharpening and recovered detail is held back on facial skin.</p>
+
+  <p><strong>The progress bar sits at 100% for a while.</strong><br>
+  That's expected on large photos. Once the model has finished its passes there is still a finishing stage, then encoding and saving — on a big image those can take as long as the enhancement did. Clarity tells you which stage it is in rather than leaving the number stuck; it hasn't frozen.</p>
+
+  <p><strong>How does enhancing several photos at once work?</strong><br>
+  Pick up to 25 in the photo picker. They run one at a time — two at once is the fastest way to run a phone out of memory — and the queue survives leaving the app or a restart. Every finished photo can be tapped to compare it against the original, then saved or shared on its own, and all of them stay in History.</p>
+
+  <p><strong>Where do enhanced photos go?</strong><br>
+  Into your photo library if saving is on, keeping the original's capture date, location, and camera details. Every result is also kept in History inside the app, where you can compare, re-save in JPEG, HEIC, or PNG, or delete it.</p>
+
+  <p><strong>What does the Lifetime Unlock include?</strong><br>
+  Unlimited enhancements, all the models, face restoration, batches, and the Photos and share extensions. It's a one-time purchase — no subscription, ever. The price shown in the App Store is the one for your country.</p>
+
+  <p><strong>I paid before but the app is locked.</strong><br>
+  Tap <em>Restore Purchases</em> on the unlock screen while signed in to the same Apple Account you bought with. If it still doesn't unlock, email me.</p>
+
+  <p><strong>Editing in the Photos app says to unlock Clarity first.</strong><br>
+  The free enhancement lives in the Clarity app itself, because that's the only place the unlock can be offered. Once you own the Lifetime Unlock, enhancing from inside Photos works with no further prompts.</p>
+
+  <p><strong>Can I get a refund?</strong><br>
+  Purchases go through Apple, so refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. I can't process them myself.</p>
+
+  <p><strong>Why was my photo made smaller before enhancing?</strong><br>
+  A 4× upscale of a very large photo can exceed what an iPhone will hand a single app. Clarity sizes the input to what your device can actually hold, which is why <em>Max input size</em> in Settings only offers sizes that fit. Detail thrown away by that step is folded back into the result afterwards.</p>
+
+  <h2>Privacy</h2>
+  <p>Clarity collects no data at all — no analytics, no accounts, no tracking. Full details in the <a href="privacy.html">privacy policy</a>.</p>
+</main>
+<footer>Clarity — enhance photos privately, entirely on your iPhone.</footer>
+</body>
+</html>
